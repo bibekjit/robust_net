@@ -44,12 +44,12 @@ The model is fine tuned for summarization and NMT task, as well as text classifi
 The observed best lr scheduling turned out to be
 5% linear warmup till `2e-4` and then cosine decay to `1e-7`
 
-News summarization
-`BLEU-1 : 0.60 | BLEU-2 : 0.51 | BLEU-3 : 0.43 | BLEU-4 : 0.34`
+News summarization\
+`BLEU-1 : 0.60 | BLEU-2 : 0.51 | BLEU-3 : 0.43 | BLEU-4 : 0.34`\
 `ROUGE-1 : 0.57 | ROUGE-2 : 0.29 | ROUGE-L : 0.51`
 
-French to english NMT
-`BLEU-1 : 0.72 | BLEU-2 : 0.64 | BLEU-3 : 0.57 | BLEU-4 : 0.51`
+French to english NMT\
+`BLEU-1 : 0.72 | BLEU-2 : 0.64 | BLEU-3 : 0.57 | BLEU-4 : 0.51`\
 `ROUGE-1 : 0.70 | ROUGE-2 : 0.51 | ROUGE-L : 0.67`
 
 for text classification, the encoder only model is 3M params
