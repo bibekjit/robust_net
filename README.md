@@ -7,14 +7,8 @@ A novel seq2seq model aim to be robust and lightweight, an independent resaerch 
 The design is that of the original transformer model with slight changes to reduce parameter count and increase robustness
 
 A the model has a shared embedding matrix that is decomposed to a smaller dimension followed by factorization and the ouput is added to sinusoidal encodings.
-It uses the usual self attention but with same weights for query and key. 
-`emb_dim = d_model / 2` and `fact_weights = d_model / 2  x  d_model`
-
-The enocder part has a dynamic gating mechanism to refine the attention output.\
-`A_refined = LayerNorm(sigmoid(WA + b) * A_i + A_i)`
-
-where A_i is current layer self attention and A is previous layer attention output
-
+It uses the usual self attention but with same weights for query and key.\
+`emb_dim = d_model / 2` and `fact_weights = d_model / 2  x  d_model`\
 The feed forward layer uses a GeLU activation and with `ff_units = 2 * d_model`
 
 ### Pretraining and setup
