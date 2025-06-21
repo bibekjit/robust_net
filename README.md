@@ -1,6 +1,6 @@
 # Robust Net 
 ### Introduction
-A novel seq2seq model aim to be robust and lightweight, an independent resaerch and effort
+A novel seq2seq model aimed to be robust and lightweight, an independent project
 
 ### Architecture
 
